@@ -1,0 +1,1 @@
+cd C:\Users\26tho\AppData\Local\Android\Sdk\tools ; ./emulator -avd Device_1
