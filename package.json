@@ -17,5 +17,16 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/26th-Official/Project_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/26th-Official/Project_1/issues"
+  },
+  "homepage": "https://github.com/26th-Official/Project_1#readme",
+  "description": ""
 }
