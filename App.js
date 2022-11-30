@@ -1,4 +1,4 @@
-import { Button, StyleSheet, Text, TextInput, View, ScrollView } from "react-native";
+import { Button, StyleSheet, Text, TextInput, View, FlatList } from "react-native";
 import { useState } from "react";
 
 export default function App() {
@@ -29,10 +29,15 @@ export default function App() {
                 <Button title="Submit" onPress={buttonpress} />
             </View>
             <View style={styles.container3}>
-                <ScrollView>
-                    <Text>List of Goals</Text>
-                    {goals.map((i) => <Text style={styles.goal} key={i}>{i}</Text>)}
-                </ScrollView>
+                <Text>List of Goals</Text>
+                <FlatList 
+                    data={goals} 
+                    renderItem={ itemdata => {
+                        return(
+                            <View>
+                                <Text style={styles.goal}>{itemdata.item}</Text>
+                            </View>
+                )}} alwaysBounceVertical={false}/>
             </View>
         </View>
     );
